@@ -1,6 +1,8 @@
 ### Specific GitIgnore ###
 
 data/config.js
+data/global.sqlite
+package-lock.json
 
 
 ### Node.JS GitIgnore Template Below ###
