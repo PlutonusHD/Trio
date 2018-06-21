@@ -1,6 +1,6 @@
 ### Specific GitIgnore ###
 
-./data/config.js
+config.js
 
 
 ### Node.JS GitIgnore Template Below ###
