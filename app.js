@@ -1,3 +1,9 @@
+/*
+    This is a development build of Trio.
+
+    I highly recommend you check out the master branch instead!
+*/
+
 try {
     require.resolve("discord.js");
     require.resolve("chalk");
