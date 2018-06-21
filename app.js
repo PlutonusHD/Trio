@@ -96,5 +96,3 @@ trio.on('disconnect', event => {
         console.log(chalk.bgRed("Err") + ": " + chalk.red("Disconnected from Discord with code " + event.code));
     }
 });
-
-trio.on
