@@ -1,0 +1,30 @@
+{
+  "name": "trio",
+  "version": "1.0.6",
+  "description": "A (soon to be) feature-rich Discord bot!",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PlutonusHD/Trio.git"
+  },
+  "keywords": [
+    "Discord",
+    "Discord.JS",
+    "D.JS",
+    "Bot"
+  ],
+  "author": "PlutonusHD // Plutonus#0003",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/PlutonusHD/Trio/issues"
+  },
+  "homepage": "https://github.com/PlutonusHD/Trio#readme",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "discord.js": "^11.3.2",
+    "sqlite": "^2.9.2"
+  }
+}
