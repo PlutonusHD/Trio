@@ -1,7 +1,6 @@
 module.exports = {
     name: 'help',
     description: 'List all of my commands or info about a specific command.',
-    cooldown: 3,
     usage: '[command name]',
     cooldown: 5,
     execute(c, msg, args) {

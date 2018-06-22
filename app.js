@@ -14,7 +14,9 @@ try {
     process.exit(1);
 }
 
-const trio=new(require("discord.js")).Client();
+const Discord = require("discord.js")
+const trio = new Discord.Client();
+const fs = require("fs");
 const { token, prefix } = require("./data/config");
 const chalk = require("chalk");
 const sql = require("sqlite");
@@ -36,18 +38,18 @@ trio.on('ready', () => {
         console.log(chalk.bgRed("Err") + ": " + chalk.red("Trio is not designed to run under a Discord user account!"));
         process.exit(1);
     }
-    console.log(chalk.bgGreen("Trio") + ": Registering commands...");
+    console.log(chalk.black.bgGreen("Trio") + ": Registering commands...");
     trio.commands = new Discord.Collection();
     trio.cooldown = new Discord.Collection();
     const cmds = fs.readdirSync('./data/commands').filter(file => file.endsWith('.js'));
     let i=0;
     for (const f of cmds) {
         const cmd = require(`./data/commands/${f}`);
-        c.commands.set(cmd.name, cmd);
+        trio.commands.set(cmd.name, cmd);
         i++;
-        console.log(chalk.bgGreen("Trio") + `: Registed command '${cmd.name}'`);
+        console.log(chalk.black.bgGreen("Trio") + `: Registed command '${cmd.name}'`);
     }
-    console.log(chalk.bgGreen("Trio") + `: Registered a total of ${i} commands.`);
+    console.log(chalk.black.bgGreen("Trio") + `: Registered a total of ${i} commands.`);
 
     // Once complete, do:
     trio.on('message', msg => {
