@@ -9,6 +9,8 @@
     </p>
 </div>
 
+**This is the development version of Trio, I highly recommend you check out the master branch instead!**
+
 ## About
 Trio is a powerful Discord bot built on the [Discord.js](https://discord.js.org/) module. Trio has some pretty awesome features too:
 
